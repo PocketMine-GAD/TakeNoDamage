@@ -4,7 +4,7 @@ namespace TakeNoDamage;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\entity\EntityDamageEvent;
-use Pocketmine\event\Listener;
+use pocketmine\event\Listener;
 
 class Main extends PluginBase implements Listener {
 public function onEnable() {
@@ -18,4 +18,5 @@ public function onDamage(EntityDamageEvent $event) {
     $event->setCancelled();
     }
       
+}
 }
